@@ -26,7 +26,7 @@
         inputs:
           username: ec2-user
           ssh_key_data: "{{ lookup('file', 'ansible-demo.pem') }}"
-          controller_host: "https://control"
+          controller_host: "https://localhost"
           controller_username: admin
           controller_password: ansible123!
         validate_certs: false
