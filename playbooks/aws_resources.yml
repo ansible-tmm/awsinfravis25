@@ -31,7 +31,7 @@
           controller_username: admin
           controller_password: ansible123!
         validate_certs: false
-      when: create_key.changed
+    #  when: create_key.changed
 
     # - name: Add machine credential
     #   ansible.controller.credential:
