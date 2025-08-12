@@ -26,10 +26,10 @@
         inputs:
           username: ec2-user
           ssh_key_data: "{{ lookup('file', 'ansible-demo.pem') }}"
-          controller_host: "https://localhost"
-          controller_username: admin
-          controller_password: ansible123!
-          validate_certs: false
+        controller_host: "https://localhost"
+        controller_username: admin
+        controller_password: ansible123!
+        validate_certs: false
 
     - name: Create AWS VPC {{ ec2_name_prefix }}-vpc
       amazon.aws.ec2_vpc_net:
